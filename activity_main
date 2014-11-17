@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fff8edff">
+
+    <TextView
+        android:text="Good morning!"
+        android:textSize="30dp"
+        android:textColor="#ff80252e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="135dp"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textSize="30dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        android:autoText="false"
+        android:textAlignment="center"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:editable="false"
+        android:hint="What your name?" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:id="@+id/button"
+        android:textSize="50sp"
+        android:textColor="#ff57ff3a"
+        android:onClick="button_onClick"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:capitalize="words" />
+
+</RelativeLayout>
